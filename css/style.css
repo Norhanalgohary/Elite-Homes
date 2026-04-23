@@ -1,0 +1,227 @@
+@import url(variables.css);
+body{
+    font-family: sans-serif;
+    color: var(--secondary-color);
+}
+.navbar{
+  box-shadow: 0 2px 4px -1px #9d9c9cc4;
+}
+.navbar-brand {
+    font-size:24px;
+    /* border-bottom: 1px solid gray; */
+}
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight:500 ;
+    --bs-nav-link-color: var(--secondary-color);
+    --bs-nav-link-hover-color: var(--primary-color);
+}
+.navbar-nav .nav-link.active {
+    color: var(--secondary-color);
+    position: relative;
+}
+.nav-link.active:hover{
+    color: var(--primary-color);
+}
+#hero{
+      background-image: linear-gradient(rgba(71, 20, 115, 0.800),rgba(71, 20, 115, 0.800)), url(../imgs/hero-bg-img.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 50px;
+}
+.hero{
+    margin-top: 80px;
+    width: 60%;
+    h1{
+        font-weight: 700;
+        font-size: 60px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 20px;
+    }
+     h5{
+        font-weight: 700;
+        font-size: 30px;
+    }
+    h6{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    form{
+        button{
+            background-color: var(--primary-color);
+            border: none;
+            color: white;
+            font-weight: 600;
+        font-size: 16px;
+        }
+        .form-select {
+    --bs-form-select-bg-img: none;
+   
+}
+    }
+
+}
+/* ----------------------------------------------------------------------------- */
+header{
+    h5{
+        font-weight: 900;
+        font-size: 48px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:991px){
+    .nav-link:hover{
+    border-radius: 5px;
+    background: #dbd5f8;
+}
+.navbar-brand {
+    
+    
+}
+}
+
+
+
+
+
+@media screen and (min-width:991px) {
+    .navbar-nav .nav-link.active {
+    color: var(--secondary-color);
+    position: relative;
+}
+.nav-link.active:hover{
+    color: var(--primary-color);
+}
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight:500 ;
+    --bs-nav-link-color: var(--secondary-color);
+    --bs-nav-link-hover-color: var(--primary-color);
+}
+.nav-link.active::after{
+        content: "";
+        width: 0px;
+        height: 3px;
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        background-color: var(--primary-color);
+        transition: all 0.5s;
+    }
+   .nav-link.active:hover:after{
+        content: "";
+        width: 85%;
+        height: 3px;
+        position: absolute;
+        top: 80%;
+        left: 7%;  
+}
+.nav-link::after{
+        content: "";
+        width: 0px;
+        height: 3px;
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        background-color: var(--primary-color);
+        transition: all 0.5s;
+    }
+.nav-link:hover:after{
+        content: "";
+        width: 85%;
+        height: 3px;
+        position: absolute;
+        top: 80%;
+        left: 7%;  
+}
+}
+
+/* .navbar-nav .dropdown-menu .nav-link.show {
+     top: 100%;
+    right: 0;
+    position: static;
+    display: flex;
+    width: auto; 
+    justify-content: space-between;
+}
+
+.dropdown-menu[data-bs-popper] .nav-link.show{
+    top: 100%;
+    right: 0;
+    margin-top: var(--bs-dropdown-spacer);
+} */
+
+
+/* @media screen and (max-width:991px) {
+    .navbar-nav .nav-link.active {
+    color: var(--secondary-color);
+    position: relative;
+}
+.nav-link.active:hover{
+    color: var(--primary-color);
+}
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight:500 ;
+    --bs-nav-link-color: var(--secondary-color);
+    --bs-nav-link-hover-color: var(--primary-color);
+}
+.nav-link.active::after{
+        content: "";
+        width: 0px;
+        height: 3px;
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        background-color: var(--primary-color);
+        transition: all 0.5s;
+    }
+   .nav-link.active:hover:after{
+        content: "";
+        width: 85%;
+        height: 3px;
+        position: absolute;
+        top: 80%;
+        left: 7%;  
+}
+.nav-link::after{
+        content: "";
+        width: 0px;
+        height: 3px;
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        background-color: var(--primary-color);
+        transition: all 0.5s;
+    }
+.nav-link:hover:after{
+        content: "";
+        width: 85%;
+        height: 3px;
+        position: absolute;
+        top: 80%;
+        left: 7%;  
+}
+} 

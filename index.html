@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Homes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed fixed-top px-2 py-3">
+        <div class="container-fluid ">
+
+            <a class="navbar-brand fw-bold " href="#">EliteHomes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium gap-3 g-0 ">
+                    <li class="nav-item position-relative">
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#featured-props" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Properties <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="#fAQ">FAQ</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <section id="hero">
+            <div class="container hero  mb-5 text-center text-light p-5  ">
+                
+                <h1>Find Your Dream Home</h1>
+                <p class="col-10 mx-auto my-4">Discover exceptional properties in prime locations. From modern condos to luxury estates, we help you
+                    find the perfect place to call home.</p>
+                <form class="bg-body py-3 px-3 text-black rounded-4 my-5 w-100  ">
+                    <div class="row py-3 px-3">
+                        <div class="col-lg-6 mb-4">
+                            <label for="location">Location</label>
+                            <input type="text" name="location" id="location" placeholder="Enter city, neighborhood, or ZIP code" class="form-control p-2">
+                        </div>
+
+
+                        <div class="col-lg-3 mb-4">
+                            <label for="">Property Type</label>
+                            <select class="form-select p-2" aria-label="Default select example">
+                            <option selected>All Types</option>
+                            <option value="1">House</option>
+                            <option value="2">Apartment</option>
+                            <option value="3">Condo</option>
+                            <option value="4">Townhouse</option>
+                        </select>
+                    </div>
+
+                      <div class="col-lg-3 mb-4">
+                            <label for="">Price Range</label>
+                            <select class="form-select p-2" aria-label="Default select example">
+                            <option selected>Any Price</option>
+                            <option value="1">$0 - $500K</option>
+                            <option value="2">$500K - $1M</option>
+                            <option value="3">$1M - $2M</option>
+                            <option value="4">$2M+</option>
+                        </select>
+                    </div>
+                    
+                   
+                   
+                        <div class="col-lg-3 mb-3">
+                            <label for="">Bedrooms</label>
+                            <select class="form-select p-2 " aria-label="Default select example">
+                            <option selected>All</option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
+
+                      <div class="col-lg-3 mb-3">
+                            <label for="">Bathrooms</label>
+                            <select class="form-select p-2 " aria-label="Default select example">
+                            <option selected>Any</option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                        </select>
+                    </div>
+
+                     <div class="col-lg-3 mb-3">
+                          <label for="">Min Sq Ft</label>
+                        <input type="number" name="" id="" class="form-control p-2" placeholder="1,000">
+                    </div>
+
+                         <div class="col-lg-3 mb-3 ">
+                          <label for="">Max Sq Ft</label>
+                        <input type="number" name="" id="" class="form-control p-2" placeholder="5,000">
+                    </div>
+
+                  <div class="col-lg-12 mt-4 "><button type="submit" class="text-capitalize p-3 rounded-3 w-100">search properties</button></div>
+                    </div>
+                    
+                </form>
+                <div>
+                    <div class="row mx-auto col-11 ">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h5>15,000+</h5>
+                            <h6>Active Listings</h6>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h5>98%</h5>
+                            <h6>Client Satisfaction</h6>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h5>500+</h5>
+                            <h6>Expert Agents</h6>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h5>25</h5>
+                            <h6>Years Experience</h6>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section id="featured-props">
+            <div class="container bg-danger vh-100 mb-5">
+                <header class="text-center">
+                    <div>Premium Collection</div>
+                    <h5>Featured Properties</h5>
+                    <h6>Discover our handpicked selection of premium properties in the most desirable locations</h6>
+                </header>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container bg-danger vh-100 mb-5"></div>
+        </section>
+        <section id="testimonials">
+            <div class="container bg-danger vh-100 mb-5"></div>
+        </section>
+        <section id="fAQ">
+            <div class="container bg-danger vh-100 mb-5"></div>
+        </section>
+        <section id="contact">
+            <div class="container bg-danger vh-100 mb-5"></div>
+        </section>
+
+    </main>
+
+
+    <footer></footer>
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
